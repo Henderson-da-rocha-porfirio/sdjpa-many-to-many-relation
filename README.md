@@ -23,7 +23,7 @@
 #### a. Pessoa - Uma Pessoa tem uma Licenca
 |   Long id   |
 |     :---:      |
-| Licenca licenca         |
+| Licenca licenca |
 |   |
 #### b. Licenca - E Licenca pertence a uma Pessoa em particular
 |   Long id   |
