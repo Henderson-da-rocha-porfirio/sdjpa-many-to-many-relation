@@ -27,7 +27,7 @@
 |   |
 #### b. Licenca - E Licenca pertence a uma Pessoa em particular
 |   Long id   |
-     :---:      |
+|     :---:      |
 | Pessoa pessoa |
 |   |
 ### 2. MANY TO MANY -
