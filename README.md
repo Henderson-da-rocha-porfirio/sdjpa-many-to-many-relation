@@ -34,18 +34,18 @@
 #### a. Encomenda (Order) - Uma Encomenda pode ter múltiplos produtos.
 |   Long id   |
 |    :---:    |
-| Set<Produto> produtos |
+| Set < Produto > produtos |
 |   |
 #### b. Produto - E um Produto pode pertencer a várias encomendas.
 |   Long id   |
 |    :---:    |
 | String name |
-|Set<Encomenda> encomendas |
+|Set < Encomenda > encomendas |
 ### 3. ONE TO MANY e MANY TO ONE
 #### a. Cliente - Um cliente pode ter vários números de telefone //  Da perspectiva do cliente o relacionamento é ONE TO MANY.
 |   Long id   |
 |   :---:     |
-| Set<NumeroTelefone> numbers |
+| Set < NumeroTelefone > numbers |
 |   |
 #### b. NumeroTelefone - E um número pode pertencer a um cliente apenas. //  Da perspectiva do NumeroTelefone o relacionamento é MANY TO ONE
 |   Long id   |
@@ -59,7 +59,7 @@
 ##### 3. Cliente - Um cliente pode ter vários números de telefone //  Da perspectiva do cliente o relacionamento é ONE TO MANY.
 |   Long id   |
 |   :---:      |
-| Set<NumeroTelefone> numbers |
+| Set <  NumeroTelefone > numbers |
 |   |
 ##### 4. NumeroTelefone - E um número pode pertencer a um cliente apenas. //  Da perspectiva do NumeroTelefone o relacionamento é MANY TO ONE
 |   Long id   |
@@ -79,7 +79,7 @@
 |   Cliente   |
 |    :---:    |
 |    @OneToMany     |
-| List<NumeroTelefone> numerosTelefone;|
+| List < NumeroTelefone > numerosTelefone;|
 #### b. @ManyToOne acima de Cliente cliente; em NumeroTelefone
 |   NumeroTelefone   |
 |     :---:      |
@@ -94,7 +94,7 @@
 |   Cliente   |
 |    :---:      |
 |    @OneToMany     |
-| List<NumeroTelefone> numerosTelefone;|
+| List < NumeroTelefone > numerosTelefone;|
 #### b. @ManyToOne acima de Cliente cliente; em NumeroTelefone
 |   NumeroTelefone   |
 |     :---:      |
@@ -112,5 +112,5 @@
 |   Cliente   |
 |    :---:      |
 |    @OneToMany     |
-| List<NumeroTelefone> numerosTelefone;|
+| List < NumeroTelefone > numerosTelefone;|
 ### 3. Então dependerá da regra de negócio se faremos a associação Unidirecional ou Bidirecional.
