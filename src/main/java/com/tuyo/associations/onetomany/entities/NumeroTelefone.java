@@ -11,8 +11,8 @@ public class NumeroTelefone {
 	private String number;
 	private String type;
 
-	@ManyToOne
-	@JoinColumn(name = "customer_id")
+	@ManyToOne									// Anotação da association que retorna para Cliente.
+	@JoinColumn(name = "cliente_id")			// Para fazer Join com a Classe Cliente. Fala para o hibernate  que essa coluna no database deve ser associada a essa associação ou fazer um "join" de NumeroTelefone com um Cliente em particular.
 	private Cliente cliente;
 
 	public long getId() {

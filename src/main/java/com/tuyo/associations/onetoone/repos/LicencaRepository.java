@@ -1,8 +1,8 @@
 package com.tuyo.associations.onetoone.repos;
 
-import com.bharath.springdata.associations.onetoone.entities.License;
+import com.tuyo.associations.onetoone.entities.Licenca;
 import org.springframework.data.repository.CrudRepository;
 
-public interface LicencaRepository extends CrudRepository<License, Long> {
+public interface LicencaRepository extends CrudRepository<Licenca, Long> {
 
 }

@@ -40,11 +40,11 @@ public class Programador {
 		this.sal = sal;
 	}
 
-	public Set<Projeto> getProjects() {
+	public Set<Projeto> getProjetos() {
 		return projetos;
 	}
 
-	public void setProjects(Set<Projeto> projetos) {
+	public void setProjetos(Set<Projeto> projetos) {
 		this.projetos = projetos;
 	}
 

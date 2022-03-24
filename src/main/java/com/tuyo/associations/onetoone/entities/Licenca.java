@@ -50,11 +50,11 @@ public class Licenca {
 		this.validTo = validTo;
 	}
 
-	public Pessoa getPerson() {
+	public Pessoa getPessoa() {
 		return pessoa;
 	}
 
-	public void setPerson(Pessoa pessoa) {
+	public void setPessoa(Pessoa pessoa) {
 		this.pessoa = pessoa;
 	}
 

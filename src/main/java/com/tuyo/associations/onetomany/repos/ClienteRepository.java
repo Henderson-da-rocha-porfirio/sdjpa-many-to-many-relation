@@ -1,8 +1,8 @@
 package com.tuyo.associations.onetomany.repos;
 
-import com.bharath.springdata.associations.onetomany.entities.Customer;
+import com.tuyo.associations.onetomany.entities.Cliente;
 import org.springframework.data.repository.CrudRepository;
 
-public interface ClienteRepository extends CrudRepository<Customer, Long> {
+public interface ClienteRepository extends CrudRepository<Cliente, Long> {
 
 }
