@@ -39,7 +39,7 @@ public class AssociationsApplicationTests {
 	}
 
 	@Test
-	public void testCreateCliente() {
+	public void testCreateCliente() { //Criando Clientes (PK) e NumeroTelefone (FK)
 
 		Cliente cliente = new Cliente();
 		cliente.setName("John");
@@ -60,8 +60,8 @@ public class AssociationsApplicationTests {
 
 	@Test
 	@Transactional
-	public void testLoadCliente() {
-		Cliente cliente = repository.findById(4L).get();
+	public void testLoadCliente() {							 // Ler os objetos clientes do database
+		Cliente cliente = repository.findById(50L).get();     // 50L é o número do ID do PK.
 		System.out.println(cliente.getName());
 
 		Set<NumeroTelefone> numbers = cliente.getNumbers();
@@ -71,11 +71,11 @@ public class AssociationsApplicationTests {
 
 	@Test
 	public void testUpdateCliente() {
-		Cliente cliente = repository.findById(4L).get();
+		Cliente cliente = repository.findById(50L).get();
 		cliente.setName("John Bush");
 
 		Set<NumeroTelefone> numbers = cliente.getNumbers();
-		numbers.forEach(number -> number.setType("cell"));
+		numbers.forEach(number -> number.setType("cell")); // Lambda -> me permite mostrar no console o NumeroTelefone de cada cliente
 
 		repository.save(cliente);
 
@@ -83,7 +83,7 @@ public class AssociationsApplicationTests {
 
 	@Test
 	public void testDelete() {
-		repository.deleteById(4l);
+		repository.deleteById(50l);
 	}
 
 	@Test
