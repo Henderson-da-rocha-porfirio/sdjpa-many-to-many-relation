@@ -115,7 +115,7 @@
 | List < NumeroTelefone > numerosTelefone;|
 ### 3. Então dependerá da regra de negócio se faremos a associação Unidirecional ou Bidirecional.
 |   Paciente   | :---: | :---: |
-|   :---:     |   :---:     |
+|   :---:     |   :---:     |   :---:     |
 | id  | firstName  | lastName |
 | 1 |:---: | :---:  |
 | 2 |:---: | :---:  |
