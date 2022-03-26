@@ -16,7 +16,7 @@
 | 1 |:---: | :---:  |
 | 2 |:---: | :---:  |
 ##### tabela que mapeiará estes dois ( Paciente e Médico ) em uma associação ManyToMany.
-|   paciente_medicos   | :---: |
+|   paciente_medico   | :---: |
 |   :---:     |   :---:     |
 | paciente_id |medico_id |
 | 1 |2 |
