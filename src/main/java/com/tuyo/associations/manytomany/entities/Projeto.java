@@ -11,7 +11,7 @@ public class Projeto {
 	private int id;
 	private String name;
 	@ManyToMany(mappedBy = "projetos")
-	private Set<Programador> programadors;
+	private Set<Programador> programadores;
 
 	public int getId() {
 		return id;
@@ -30,11 +30,11 @@ public class Projeto {
 	}
 
 	public Set<Programador> getProgrammers() {
-		return programadors;
+		return programadores;
 	}
 
-	public void setProgrammers(Set<Programador> programadors) {
-		this.programadors = programadors;
+	public void setProgrammers(Set<Programador> programadores) {
+		this.programadores = programadores;
 	}
 
 	@Override

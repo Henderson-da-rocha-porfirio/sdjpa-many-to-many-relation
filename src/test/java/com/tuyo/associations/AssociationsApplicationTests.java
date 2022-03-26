@@ -83,11 +83,11 @@ public class AssociationsApplicationTests {
 
 	@Test
 	public void testDelete() {
-		repository.deleteById(50l);
+		repository.deleteById(50L); // L = lazy
 	}
 
 	@Test
-	public void testmtomCreateProgramador() {
+	public void testmtomCreateProgramador() { 									// mtom = ManyToMany
 		Programador programador = new Programador();
 		programador.setName("John");
 		programador.setSal(10000);
@@ -102,10 +102,10 @@ public class AssociationsApplicationTests {
 		programmerRepository.save(programador);
 	}
 
-	@Test
-	@Transactional
-	public void testmtomFindProgramador() {
-		Programador programador = programmerRepository.findById(1).get();
+	@Test																		// Hibernate lerá o projeto mas com lazy loading = anotar EAGER lá no Pai e aqui por @Transactional
+	@Transactional																// Evita o erro de lazy load
+	public void testmtomFindProgramador() { 									// mtom = ManyToMany
+		Programador programador = programmerRepository.findById(56).get();		// In a Many to Many association the default is fetching strategy is Lazy
 		System.out.println(programador);
 		System.out.println(programador.getProjetos());
 	}
