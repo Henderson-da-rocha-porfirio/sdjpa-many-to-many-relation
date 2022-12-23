@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-public class Programador {
+public class Programador Pica {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
